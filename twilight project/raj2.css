@@ -1,0 +1,225 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.navbar {
+  height: 70px;
+  width: 100%;
+  background-color: black;
+}
+.navbar-container {
+  align-items: center;
+  display: flex;
+
+  padding: 0 70px;
+  height: 100%;
+  color: white;
+}
+.logo-container {
+  flex: 2;
+}
+.logo {
+  color: #4dbf00;
+  font-family: "sen", sans-serif;
+  font-size: 30px;
+}
+.manu-container {
+  flex: 6;
+}
+.manu-list {
+  display: flex;
+  list-style: none;
+}
+.manu-list-item {
+  margin: 30px;
+  cursor: pointer;
+}
+.manu-list-item.active {
+  font-weight: bold;
+}
+.profile-container {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.profile-list {
+  list-style: none;
+  display: flex;
+}
+.profile-list-item {
+  margin: 25px;
+  
+}
+.profile-photo {
+  width: 32px;
+  height: 30px;
+  border-radius: 40%;
+  object-fit: cover;
+}
+.profile-text-container {
+  margin: 0 25px;
+  cursor: pointer;
+}
+.toggle {
+  height: 20px;
+  width: 40px;
+  background-color: white;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+}
+.toggle-logo {
+  color: goldenrod;
+}
+.toggle-ball {
+  background-color: black;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  position: absolute;
+  right: 1px;
+  cursor: pointer;
+}
+.sidebar {
+  width: 70px;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 70px;
+   
+  
+}
+
+.icons{
+    list-style: none;
+   
+   
+}
+.icons-logo{
+    cursor: pointer;
+    font-size: 20px;
+    color: white ;
+    margin-bottom: 40px;
+}
+.container{
+ 
+ min-height: calc(100vh - 70px);
+    background-color: rgba(10, 9, 9, 0.936);
+}
+.content-container{
+  margin-left: 70px;
+}
+.popular-movies{
+    height: 30vh;
+   
+}
+.popular-movies{
+  /* height: 30vh; */
+  color: antiquewhite;
+  padding: 50px;
+  
+}
+.popular-movies-title{
+ font-weight: bold;
+ color: black;
+ font-size: 30px;
+}
+.popular-movies-disc{
+ width: 500px;
+ padding: 30px 0;
+}
+.popular-movies-button{
+  background-color: rgb(48, 48, 173);
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 0 20px;
+  width: 100px;
+  height: 40px;
+  font-weight: bolder;
+  border: none;
+}
+.movies-list-container{
+padding: 20px;
+}
+.movies-list-title{
+  color: aliceblue;
+}
+.movies-list-wrapper{
+  margin: 10px 0;
+  position: relative;
+
+}
+.wrapper{
+  font-size: 70px;
+  position: absolute;
+  right: 10px;
+  top: 75px;
+  color: #fdfcfc;
+  cursor: pointer;
+}
+.movies-list{
+  display: flex;
+  
+}
+.movies-list-items{
+  margin-right: 30px;
+  position: relative;
+  
+}
+.movies-list-items:hover .movies-list-items-img{
+  transform: scale(1.2);
+  margin: 0 30px;
+  opacity: 0.3;
+}
+.movies-list-items:hover .movies-list-items-title,
+.movies-list-items:hover .movies-list-items-disc,
+.movies-list-items:hover .movies-list-items-button{
+  opacity: 1;
+}
+
+.movies-list-items-img{
+  transition: all 1s ease-in-out;
+  width: 270px;
+  height: 200px;
+}
+.movies-list-items-title{
+  font-size: 30px;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  left: 50px;
+  opacity: 0;
+  transition: 1s all ease-in-out;
+  color: white;
+}
+.movies-list-items-disc{
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  background-color: rgba(17, 14, 14, 0.901);
+  top: 50px;
+  left: 50px;
+ opacity: 0;
+ transition: 1s all ease-in-out;
+ color: rgb(129, 182, 38);
+}
+.movies-list-items-button{
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  bottom: 10px;
+  left: 50px;
+  opacity: 0;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(48, 48, 173);
+  padding: 10px;
+  transition: 1s all ease-in-out;
+}
